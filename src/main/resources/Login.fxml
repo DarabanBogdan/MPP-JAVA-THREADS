@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="318.0" prefWidth="426.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="LoginButton" layoutX="208.0" layoutY="194.0" mnemonicParsing="false" onMouseClicked="#Autentificare" text="Login" />
+      <Label layoutX="89.0" layoutY="107.0" text="Username">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="151.0" text="Password">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="211.0" layoutY="65.0" text="Login">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="Password" layoutX="160.0" layoutY="147.0" />
+      <TextField fx:id="Username" layoutX="160.0" layoutY="103.0" />
+   </children>
+</AnchorPane>

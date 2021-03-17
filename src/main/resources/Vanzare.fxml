@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="644.0" prefWidth="857.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Vanzare">
+   <children>
+      <TableView fx:id="TableDefault" layoutX="38.0" layoutY="19.0" onMouseClicked="#Complete" prefHeight="219.0" prefWidth="415.0">
+        <columns>
+          <TableColumn fx:id="ObiectivColumn" prefWidth="75.0" text="Obiectiv" />
+          <TableColumn fx:id="FirmaColumn" prefWidth="75.0" text="Firma" />
+            <TableColumn fx:id="OraPlecareColumn" prefWidth="75.0" text="Ora Plecare" />
+            <TableColumn fx:id="PretColumn" prefWidth="75.0" text="Pret" />
+            <TableColumn fx:id="LocuriDisponibileColumn" prefWidth="111.0" text="Locuri Disponibile" />
+        </columns>
+      </TableView>
+      <TableView fx:id="TableRezervare" layoutX="526.0" layoutY="259.0" prefHeight="238.0" prefWidth="226.0">
+        <columns>
+          <TableColumn fx:id="NumeClientColumn" prefWidth="75.0" text="Nume Client" />
+          <TableColumn fx:id="TelefonColumn" prefWidth="75.0" text="Telefon" />
+            <TableColumn fx:id="BileteColumn" prefWidth="75.0" text="Bilete" />
+        </columns>
+      </TableView>
+      <TableView fx:id="TableDefaultSearch" layoutX="38.0" layoutY="259.0" onMouseClicked="#ShowTableRezervare" prefHeight="238.0" prefWidth="415.0">
+         <columns>
+            <TableColumn fx:id="ObiectivColumnSearch" prefWidth="75.0" text="Obiectiv" />
+            <TableColumn fx:id="FirmaColumnSearch" prefWidth="75.0" text="Firma" />
+            <TableColumn fx:id="OraPlecareColumnSearch" prefWidth="75.0" text="Ora Plecare" />
+            <TableColumn fx:id="PretColumnSearch" prefWidth="75.0" text="Pret" />
+            <TableColumn fx:id="LocuriDisponibileColumnSearch" prefWidth="111.0" text="Locuri Disponibile" />
+         </columns>
+      </TableView>
+      <Label layoutX="518.0" layoutY="41.0" prefHeight="17.0" prefWidth="93.0" text="Obiectiv Turistic" />
+      <Label layoutX="538.0" layoutY="95.0" prefHeight="17.0" prefWidth="71.0" text="Interval Orar" />
+      <Label layoutX="554.0" layoutY="152.0" />
+      <TextField fx:id="MinutFinalField" layoutX="738.0" layoutY="91.0" prefHeight="25.0" prefWidth="28.0" />
+      <TextField fx:id="MinutInceputField" layoutX="646.0" layoutY="91.0" prefHeight="25.0" prefWidth="28.0" />
+      <TextField fx:id="OraFinalField" layoutX="710.0" layoutY="91.0" prefHeight="25.0" prefWidth="28.0" />
+      <TextField fx:id="OraInceputField" layoutX="618.0" layoutY="91.0" prefHeight="25.0" prefWidth="28.0" />
+      <TextField fx:id="ObiectivTuristicField" layoutX="618.0" layoutY="37.0" />
+      <Label layoutX="686.0" layoutY="79.0" text="-">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <Button fx:id="SearchButton" layoutX="712.0" layoutY="148.0" mnemonicParsing="false" onAction="#Cauta" text="Search" />
+      <Button fx:id="RezervaButton" layoutX="382.0" layoutY="590.0" mnemonicParsing="false" onAction="#Rezerva" text="Rezerva" />
+      <Label layoutX="63.0" layoutY="517.0" text="Nume Client" />
+      <Label layoutX="62.0" layoutY="594.0" text="Numar Bilete" />
+      <Label layoutX="63.0" layoutY="556.0" text="Telefon" />
+      <TextField fx:id="NumarBileteField" layoutX="149.0" layoutY="590.0" />
+      <TextField fx:id="NumeClientField" layoutX="149.0" layoutY="513.0" />
+      <TextField fx:id="TelefonField" layoutX="149.0" layoutY="552.0" />
+      <Button fx:id="LogoutButton" layoutX="737.0" layoutY="590.0" mnemonicParsing="false" onAction="#Logout" text="Logout" />
+   </children>
+</AnchorPane>
